@@ -1,6 +1,4 @@
-
 type RouteParams = { myplanetid: string };
-
 
 type PlanetInfo = {
 	geology: {
@@ -22,7 +20,6 @@ type PlanetInfo = {
 	};
 	temperature: number;
 };
-
 
 async function getData({params}: {params: RouteParams}) {
     const response = await fetch(`http://localhost:8081/api/v1/planets/${params.myplanetid}`);

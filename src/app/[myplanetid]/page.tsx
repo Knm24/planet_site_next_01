@@ -39,17 +39,17 @@ async function getData({params}: {params: RouteParams}) {
 export default async function ListPage
 ({params}: {params: RouteParams}) {
 
-
     const id= params.myplanetid;
-    const data = await getData({ params })
+    const data = await getData({ params });
 
     console.log('data');
     console.log(data);
 
   return (
-    <>List page ${id} --- 
+    <>
+	List page ${id} --- 
 
-{JSON.stringify(data)}
+		{JSON.stringify(data)}
 
     </>
 
